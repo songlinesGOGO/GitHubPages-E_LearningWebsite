@@ -1,2 +1,1 @@
-# GitHubPages-E_LearningWebsite
-E-larning website on GitHub Pages
+# Repository to make websites using GithunPages, from 26th October 2022.
