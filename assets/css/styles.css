@@ -41,6 +41,10 @@ a:hover {
   color: var(--secondary-color);
 } 
 
+p {
+  color: #505050;
+}
+
 
 /* nav bar */
 nav {
@@ -99,7 +103,7 @@ ul {
 .titles {
   font-size: 3rem;
   margin-bottom: 1rem;
-  color: var(--primary-color);
+  color: var(--secondary-color);
 }
 
 
@@ -110,7 +114,7 @@ ul {
   align-items: center;
   justify-content: space-between;
   gap: 1.9rem;
-  max-width: 950px;
+  max-width: 910px;
   margin: 0 auto;
 }
 
@@ -175,8 +179,8 @@ ul {
 }
 
 .main-img img {
-  width:75%;
-  height:75%;
+  width:100%;
+  height:100%;
 }
 
 
@@ -186,7 +190,7 @@ ul {
   align-items: center;
   justify-content: center;
   gap: 1.9rem;
-  max-width: 950px;
+  max-width: 910px;
   margin: 0 auto;
 }
 
@@ -200,13 +204,12 @@ ul {
 .about .column h2 {
   font-size: 1rem;
   margin-bottom: 0.5rem;
-  color: #3c413f;
+  color:  var(--secondary-color);
 }
   
 .about .column p {
   font-size: 1em;
   line-height: 1.2rem;
-  color: #666;
 }
 
 .about .column h3 {
@@ -214,7 +217,7 @@ ul {
 }
 
 .about-img img{
-  width: 27%;
+  width: 30%;
   height: 27%;
   float: left;
   margin: 0.5rem 2.5rem 0 0;
@@ -222,10 +225,9 @@ ul {
 
 .about .column{
    float: left;
-   width: 30%;
-   margin: 1.5rem 15px 0 0;
-   padding: 10px 15px 5px 0;
-   height: 150px;
+   width: 32%;
+   padding: 25px 30px 5px 0;
+   height: 12rem;
   background-color: #fff;
 }
 
@@ -236,7 +238,7 @@ ul {
   align-items: center;
   justify-content: center;
   gap: 1.9rem;
-  max-width: 950px;
+  max-width: 910px;
   margin: 0 auto;
 }
 
@@ -249,7 +251,7 @@ ul {
 .review h2 {
   font-size: 1.25rem;
   margin-bottom: 1rem;
-  color: #3c413f;
+  color:  var(--secondary-color);
 }
   
 .review p {
@@ -262,14 +264,14 @@ ul {
 
 .review .column {
   float: left;
-  width: 27%;
-  margin: 15px 40px 0 0;
+  width: 29%;
+  margin: 15px 42px 0 0;
   padding: 0;
   border-radius: 25px;
 }
 
 .review img {
-  width:27%;
+  width:32%;
   margin: auto;
   float: left;
 }
@@ -281,7 +283,7 @@ ul {
   align-items: center;
   justify-content: center;
   gap: 1.9rem;
-  max-width: 950px;
+  max-width: 910px;
   margin: 0 auto;
 }
 
@@ -289,36 +291,38 @@ ul {
   font-size: 2.5rem;
   margin-bottom: 1rem;
   color: var(--primary-color);
+  text-align: center;
 }
 
 .courses h2 {
   font-size: 2rem;
-  margin-bottom: 1rem;
-  color: #3c413f;
+  margin: 1rem 0;
+  color:  var(--secondary-color);
   text-align: center;
 }
 
 .courses h3 {
   font-size: 2.25rem;
-  color: #555;
+  color:  var(--secondary-color);
   text-align: center;
 }
 
 .courses .column {
   float: left;
-  width: 28%;
-  margin: 15px 25px 15px 0;
+  width: 31%;
+  margin: 15px 30px 15px 0;
   padding: 22px;
-  height: 370px;
+  height: 24rem;
   border-radius: 25px;
   background-color: #FFF0D4;
 }
 
 .courses .column ul {
   font-size: 1em;
-  height: 6rem;
+  height: 5rem;
   margin: 1rem 2rem 3rem;
   display: block;
+  color: #3c413f;
 }
 
 .courses .column li{
