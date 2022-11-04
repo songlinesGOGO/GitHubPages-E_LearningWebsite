@@ -5,7 +5,7 @@
   --normal-font: 400;
   --bold-font: 600;
   --bolder-font: 900;
-  --primary-color: #1da756;
+  --primary-color: #1B984F;
   --secondary-color: #3c413f;
   --line-height: 1.7rem;
   --transition: 0.4s ease-in;
@@ -41,19 +41,6 @@ a:hover {
   color: var(--secondary-color);
 } 
 
-/*  
-.fist {
-  color: var(--secondary-color);
-}
-
-.jab {
-  color: var(--primary-color);
-}
-
-.tv {
-  color: var(--secondary-color);
-}
-*/
 
 /* nav bar */
 nav {
@@ -89,6 +76,16 @@ ul {
   font-weight: var(--bold-font);
 }
 
+.nav-item a {
+  text-decoration: none;
+  color: var(--secondary-color);
+}
+
+.nav-item a:hover {
+  color: var(--primary-color);
+} 
+
+
 
 /* contents */
 .contents{
@@ -96,7 +93,7 @@ ul {
   align-items: center;
   justify-content: space-between;
   gap: 1.9rem;
-  margin: 2rem 1.5rem 4rem;
+  margin: 4rem 1.5rem 6rem;
 }
 
 .titles {
@@ -114,7 +111,7 @@ ul {
   justify-content: space-between;
   gap: 1.9rem;
   max-width: 950px;
-  margin: 2rem auto -1rem;
+  margin: 0 auto;
 }
 
 .intro-text {
@@ -149,27 +146,27 @@ ul {
 }
 
 .red {
-  background-color: var(--secondary-color);
+  background-color: #1DA7D8;
   margin-right: 1.5rem;
 }
 
 .red:hover {
-  background-color: #FF7F56;
+  background-color: #E5714F;
   color: #fff;
 }
 
-.blue {
+.green {
   background-color: var(--primary-color);
 }
 
-.blue:hover {
-  background-color: #FF7F56;
+.green:hover {
+  background-color: #E5714F;
   color: #fff;
 }
 
 /* main images */
 .main-img{
-  margin: 0 0 2rem 1rem;
+  margin: 0 0 0 1rem;
 }
 
 .main-img img {
@@ -185,12 +182,12 @@ ul {
   justify-content: center;
   gap: 1.9rem;
   max-width: 950px;
-  margin: 2rem auto -1rem;
+  margin: 0 auto;
 }
 
 .about h1 {
   font-size: 2.5rem;
-  margin: 0 0 1.5rem 1.5rem;
+  margin: 0 0 0 1.5rem;
   padding: 0 0 0 1.5rem;
   color: var(--primary-color);
 }
@@ -215,13 +212,13 @@ ul {
   width: 27%;
   height: 27%;
   float: left;
-  margin: 0.5rem 2.5rem 4rem 0;
+  margin: 0.5rem 2.5rem 0 0;
 }
 
 .about .column{
    float: left;
    width: 30%;
-   margin: 0 15px 30px 0;
+   margin: 1.5rem 15px 0 0;
    padding: 10px 15px 5px 0;
    height: 150px;
   background-color: #fff;
@@ -235,7 +232,7 @@ ul {
   justify-content: center;
   gap: 1.9rem;
   max-width: 950px;
-  margin: 3rem auto -1rem;
+  margin: 0 auto;
 }
 
 .review h1 {
@@ -261,9 +258,8 @@ ul {
 .review .column {
   float: left;
   width: 27%;
-  margin: 15px 40px 15px 0;
+  margin: 15px 40px 0 0;
   padding: 0;
-  height: 250px;
   border-radius: 25px;
 }
 
@@ -277,20 +273,17 @@ ul {
 /* courses */
 .courses {
   display: left;
-  align-items: left;
-  justify-content: left;
+  align-items: center;
+  justify-content: center;
   gap: 1.9rem;
   max-width: 950px;
-  margin: 2rem auto -1rem;
-  padding:0;
+  margin: 0 auto;
 }
 
 .courses h1 {
-  font-size: 3rem;
+  font-size: 2.5rem;
   margin-bottom: 1rem;
   color: var(--primary-color);
-  text-align: center;
-  min-width: 700px;
 }
 
 .courses h2 {
@@ -305,31 +298,28 @@ ul {
   color: #555;
   text-align: center;
 }
-  
-.courses .column ul {
-  font-size: 1em;
-  height: 6rem;
-  margin: 1rem 2rem 2rem;
-  display: block;
-}
-
-.list_style li {
-  list-style-type: disc;
-}
-
-.courses .column li{
-  line-height: 1.5rem;
-  font-size: 1rem;
-}
 
 .courses .column {
   float: left;
   width: 28%;
   margin: 15px 25px 15px 0;
   padding: 22px;
-  height: 350px;
+  height: 370px;
   border-radius: 25px;
   background-color: #FFF0D4;
+}
+
+.courses .column ul {
+  font-size: 1em;
+  height: 6rem;
+  margin: 1rem 2rem 3rem;
+  display: block;
+}
+
+.courses .column li{
+  line-height: 1.5rem;
+  font-size: 1rem;
+  list-style-type: disc;
 }
 
 .courses .btn {
