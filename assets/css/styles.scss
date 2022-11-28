@@ -1,0 +1,325 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,900;1,700&display=swap");
+
+/* CSS Variables */
+:root {
+  --normal-font: 400;
+  --bold-font: 600;
+  --bolder-font: 900;
+  --primary-color: #1B984F;
+  --secondary-color: #3c413f;
+  --line-height: 1.7rem;
+  --transition: 0.4s ease-in;
+}
+
+/* Smooth scroll effect */
+html {
+  scroll-behavior: smooth;
+}
+
+html, body{
+  scroll-padding-top: 80px;
+}
+
+/* Resets */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  transition: var(--transition);
+}
+
+body {
+  font-family: "Roboto", sans-serf;
+}
+
+ul li {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+  color: var(--primary-color);
+}
+
+a:hover {
+  color: var(--secondary-color);
+  text-decoration: none;
+} 
+
+p {
+  color: #505050;
+  font-size: 1.5rem;
+}
+
+h1, h2, h3{
+  font-weight: bold;
+}
+
+/* @extend */
+.wrapper-extend{
+  display: left;
+  align-items: center;
+  justify-content: center;
+  gap: 1.9rem;
+  min-width: 525px;
+  max-width: 910px;
+  margin: 2.5rem auto;
+}
+
+p, .p-extend{
+  line-height: 2.25rem;
+  text-align: left;
+
+}
+
+h1, .h1-extend{
+  font-size: 3.75rem;
+  color: var(--primary-color);
+  margin:0 0 1rem;
+}
+
+h3, .h3-extend{
+  font-size: 1.75rem;
+  color:  var(--secondary-color);
+  margin-bottom: 1rem;
+}
+
+.btn-extend{
+  display: inline-block;
+  padding: 0.8rem 2rem;
+  border: none;
+  font-size: 2rem;
+  border-radius: 5px;
+  color: #fff;
+  text-align: center;
+}
+
+
+/* 3 columns */
+.column {
+  float: left;
+}
+
+
+/* nav bar */
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #fff;
+  padding: 1rem 4.5rem;
+  box-shadow: 2px 3px 2px #f1f1f1;
+  position: sticky;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0;
+  }
+  ul li {
+    margin-left: 2rem;
+    font-size: 1.5rem;
+    font-weight: var(--bold-font);
+  }  
+  ul li a {
+    text-decoration: none;
+    color: var(--secondary-color);
+  }
+  ul li a:hover {
+    text-decoration: none;
+    color: var(--primary-color);
+  } 
+  .logo h1{
+    font-size: 4rem;
+    margin: 0.5rem;
+  }
+}
+
+
+/* contents */
+.contents{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1.9rem;
+  margin: 4rem 1.5rem 6rem;
+}
+
+/* main */
+.main {
+  @extend .wrapper-extend;
+  display: flex;
+  justify-content: space-between;
+  img{
+    width: 100%;
+    margin: 0;
+    padding: 0;
+  }
+
+  .intro-text {
+    margin: 0;
+    padding: 0 3rem 0 0;
+    p {
+      @extend .p-extend;
+      margin: 1.75rem 0 0.75rem 0;
+      font-size: 1.75rem;
+      line-height: 3rem;
+    }
+  }
+  .titles{
+    margin:0 0 1rem;
+    color: var(--secondary-color);
+    font-size: 4.5rem;
+    line-height: 6rem;
+  }
+}
+
+
+/* main buttons */
+.red {
+  background-color:var(--primary-color);
+}
+
+.red:hover {
+  background-color: #E5714F;
+  color: #fff;
+}
+
+.green {
+  background-color:  #1DA7D8;
+}
+
+.green:hover {
+  background-color: #E5714F;
+  color: #fff;
+}
+
+
+/* main images */
+
+
+/* about */
+.about {
+  @extend .wrapper-extend;
+  margin-top: 4.5rem;
+
+  h1 {
+    @extend .h1-extend;
+  }
+  .about-right{
+    margin: 0;
+    padding: 2rem 0 0 2rem;
+  }
+  .column{
+    float: left;
+    width: 50%;
+    padding: 2rem 2.5rem 0.5rem 0;
+    height: 20rem;
+    background-color: #fff;
+    img{
+      height: 25%; 
+      width: auto; 
+    }
+  }
+}
+
+.about-img {
+  margin: 0;
+  padding:0 2rem 0 0;
+}
+
+.about-img img{
+  width: 100%;
+  float: left;
+}
+
+
+/* review */
+.review {
+  @extend .wrapper-extend;
+  margin-top: 0;
+  img {
+    width:100%;
+    margin: auto;
+  }
+  .column {
+    width: 50%;
+    margin: 0;
+    padding: 0 2rem 0.5rem 0;
+  }
+  .column-left{
+    margin: 0;
+    padding: 0;
+  }  
+}
+
+
+
+/* courses */
+.courses {
+  @extend .wrapper-extend;
+
+  h1 {
+    @extend .h1-extend;
+    text-align: center;
+  }
+  h2 {
+    font-size: 3rem;
+    margin: 1rem 0;
+    color:  var(--secondary-color);
+    text-align: center;
+  }
+  h3{
+    @extend .h3-extend;
+    text-align: center;
+    .btn-courses{
+      font-size: 4rem;
+    }
+  }
+
+  .column {
+    width: 31%;
+    margin: 15px 30px 15px 0;
+    padding: 22px;
+    height: 35rem;
+    border-radius: 24px;
+    background-color: #FFF0D4;
+    text-align: center;
+    ul{
+      margin: 2rem 4rem 3rem;
+      display: block;
+      color: #3c413f;
+      text-align: left;
+    }
+    li{
+      line-height: 2rem;
+      font-size: 1.5rem;
+      list-style-type: disc;
+      margin-bottom: 0.5rem;
+    }
+  }
+}
+
+/* social */
+.social {
+  text-align: center;
+  margin: 2rem;
+  padding: 2rem;
+  color: #3c413f;
+}
+
+.socicons {
+  font-size: 2rem;
+}
+
+
+/* footer */
+footer {
+  border-top: 1px solid #f1f1f1;
+  box-shadow: 0px -2px 3px #f1f1f1;
+  text-align: center;
+  padding: 2rem;
+}
